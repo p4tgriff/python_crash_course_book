@@ -16,7 +16,7 @@ elif 'red' in alien_colors:
     print('Player 1 just earned 15 points!')
 
 
-stage_of_life = '2'
+stage_of_life = 1
 
 # if '0' > stage_of_life:
 #     print('This person is a baby.')
@@ -40,7 +40,7 @@ stage_of_life = '2'
 if stage_of_life < 2:
     name = 'baby'
 
-if stage_of_life < 4:
+elif stage_of_life < 4:
     name = 'toddler'
 
 elif stage_of_life < 13:

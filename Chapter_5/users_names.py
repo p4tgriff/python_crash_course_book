@@ -6,3 +6,14 @@ for user_name in user_names:
             f"Hello {user_name}, would you like to see a status report?")
     else:
         print(f"Hello {user_name}, welcome back!")
+
+
+current_users = ['Patrick', 'Brittni', 'Jon', 'Allie', 'Ryan']
+
+new_users = ['Liam', 'Lucas', 'Nate', 'Allie', 'Ryan']
+
+for new_user in new_users:
+    if new_user == current_users:
+        print(f'This user already exists: {new_user}')
+    else:
+        print('New user created!')

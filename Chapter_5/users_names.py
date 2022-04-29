@@ -8,6 +8,8 @@ for user_name in user_names:
         print(f"Hello {user_name}, welcome back!")
 
 
+# This is not correct.  Need to figure out why it's not posting an error about matching.
+
 current_users = ['Patrick', 'Brittni', 'Jon', 'Allie', 'Ryan']
 
 new_users = ['Liam', 'Lucas', 'Nate', 'Allie', 'Ryan']

@@ -1,4 +1,4 @@
-pets = ['dog_0', 'dog_1', 'dog_2', 'cat']
+# pets = ['dog_0', 'dog_1', 'dog_2', 'cat']
 
 dog_0 = {
     'name': 'Lucky',
@@ -24,7 +24,10 @@ cat = {
     'age': '13'
 }
 
-# pets = ['dog_0', 'dog_1', 'dog_2', 'cat']
+pets = ['dog_0', 'dog_1', 'dog_2', 'cat']
+
+for pet in pets:
+    print(pet)
 
 for animals, pet in pets.items():
     print(f"My name is {pet['name']}, my owner's name is {pet['owner']}.")

@@ -17,3 +17,6 @@ if table >= 8:
     print("Due to your party size, there will be a 15 minute wait.")
 else:
     print("Your table is ready now.")
+
+multiple_of_ten = input(
+    "Provide me with a number and I'll tell you if it's a multiple of ten. ")

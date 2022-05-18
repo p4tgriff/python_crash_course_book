@@ -22,7 +22,7 @@ multiple_of_ten = input(
     "Provide me with a number and I'll tell you if it's a multiple of ten. ")
 multiple_of_ten = int(multiple_of_ten)
 
-if multiple_of_ten % 3 != 0:
+if multiple_of_ten % 10 == 0:
     print("This is a multiple of 10.")
 else:
     print("This is not a multiple of 10.")

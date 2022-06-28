@@ -5,7 +5,7 @@ def text_messages(messages):
         print(msg)
 
 
-usernames = ['Hello!', 'Have a great day', 'Goodbye']
+usernames = ['Hello', 'Have a great day', 'Goodbye']
 text_messages(usernames)
 
 unsent_messages = ['Help!', 'SOS', 'Mayday!']

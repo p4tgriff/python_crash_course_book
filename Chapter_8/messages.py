@@ -19,3 +19,8 @@ while unsent_messages:
 print("\nThe following messages have been sent:")
 for sent_message in sent_messages:
     print(sent_message)
+
+"""Call the function sent_messages() with a copy of the list of messages.  After calling the function, print both of your lists to show that the original list has retained its messages."""
+text_messages(sent_messages[:])
+print(unsent_messages)
+print(sent_message)

@@ -12,4 +12,10 @@ class Dog:
 
     def roll_over(self):
         """Simulate rolling over in response to a command."""
-        print(f"{self.name" rolled over!")
+        print(f"{self.name} rolled over!")
+
+
+my_dog = Dog('Ryder', 10)
+
+print(f"My dog's name is {my_dog.name}.")
+print(f"{my_dog.name} is {my_dog.age} years old.")

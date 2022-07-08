@@ -18,3 +18,6 @@ class User:
 
 my_user = User('Brittni', 'Griffith', 'brich411', 'Ryder')
 my_user.describe_user()
+
+user_1 = User('Patrick', 'Griffith', 'bbyguy', 'house123')
+user_1.greet_user()

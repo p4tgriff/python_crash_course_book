@@ -16,12 +16,11 @@ class Restaurant:
     def current_customer(self):
         print(f'Now serving customer number {self.customer_number}.')
 
-    def set_number_served(self, number):
-        self.customer_number = number
-        print(f'Now serivce custmer {self.number}!')
+    def set_number_served(self):
+        print(f'We have serverd {self.customer_number} customers today.')
 
-    def increment_number_server(self,):
-        print(f'')
+    def increment_number_served(self, numbers):
+        self.customer_number += numbers
 
 
 my_restaurant = Restaurant('Johnnys', 'pizza')
@@ -33,4 +32,8 @@ my_restaurant.describe_restaurant()
 my_restaurant.open_restaurant()
 
 my_restaurant.customer_number = 3
+my_restaurant.current_customer()
+
+my_restaurant.set_number_served()
+my_restaurant.increment_number_served(10)
 my_restaurant.current_customer()

@@ -37,3 +37,37 @@ my_restaurant.current_customer()
 my_restaurant.set_number_served()
 my_restaurant.increment_number_served(10)
 my_restaurant.current_customer()
+
+
+class IceCream:
+    """A simple attempt to model ice cream as a treat."""
+
+    def __init__(self, flavors='chocolate'):
+        self.flavors = flavors
+
+    def list_of_flavors(self):
+        print(f'This is our list of flavors: {self.flavors}.')
+
+
+class IceCreamStand(Restaurant):
+    """An attempt to model an ice cream store."""
+
+    def __init__(self, name, type):
+        """Initial attributes of the parent class."""
+        super().__init__(name, type)
+        self.IceCream = IceCream()
+
+    def flavors(self):
+        """An attribute that's for ice cream flavors."""
+        self.strawberry = strawberry
+        self.banana = banana
+        self.vanilla = vanilla
+        self.chocolate = chocolate
+
+    def flavors_list(self):
+        flavor_list = f'{self.strawberry}, {self.banana}, {self.vanilla}, {self.chocolate}.'
+        print('flavor_list.title()')
+
+
+ice_cream_palace = IceCreamStand('Patricks Ice Cream Palace', 'ice cream')
+print(ice_cream_palace.IceCream.flavors)

@@ -23,13 +23,27 @@ class User:
         self.login_attempts = 0
 
 
-my_user = User('Brittni', 'Griffith', 'brich411', 'Ryder')
-my_user.describe_user()
+class Admin(User):
+    """A simple attempt at defining an admin role."""
 
-user_1 = User('Patrick', 'Griffith', 'bbyguy', 'house123')
-user_1.greet_user()
+    def __init__(self, first_name, last_name, username, password):
+        """Initialize attributes of the parent class."""
+        super().__init__(first_name, last_name, username, password)
+        self.privileges = ['can add post',
+                           'can delete a post', 'can ban a user']
 
-my_user.increment_login_attempts(2)
-my_user.describe_user()
-my_user.reset_login_attempts()
-my_user.describe_user()
+
+# my_user = User('Brittni', 'Griffith', 'brich411', 'Ryder')
+# my_user.describe_user()
+
+# user_1 = User('Patrick', 'Griffith', 'bbyguy', 'house123')
+# user_1.greet_user()
+
+# my_user.increment_login_attempts(2)
+# my_user.describe_user()
+# my_user.reset_login_attempts()
+# my_user.describe_user()
+my_admin = Admin('Patrick', 'Griffith', 'p4tgriff', 'scoobydoo')
+# print(my_admin.greet_user())
+# print(my_admin.describe_user())
+print(my_admin.privileges)

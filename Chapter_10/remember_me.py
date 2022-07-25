@@ -33,11 +33,8 @@ def greet_user():
     if username:
         print(f"Welcome back, {username}!")
     else:
-        username = input("What is your name?")
-        filename = 'username.json'
-        with open(filename, 'w') as f:
-            json.dump(username, f)
-            print(f"We'll remmeber you when you come back, {username}!")
+        username = get_new_username()
+        print(f"We'll remmeber you when you come back, {username}!")
 
 
 greet_user()

@@ -11,17 +11,16 @@ print("The largest number in this list is:", max(x))
 
 
 def biggest_number():
-    my_list.sort()
     print("The largest number in this list is: ", max(my_list))
 
 
 biggest_number()
 
 
-def guess_big_number(x=[]):
-    # x = []
-    x.sort()
-    print("The largest number in THIS list is: ", max(x))
+# def guess_big_number():
+#     x = []
+#     x.sort()
+#     print("The largest number in THIS list is: ", max(x))
 
 
-guess_big_number(1, 3, 5, 2)
+# guess_big_number()

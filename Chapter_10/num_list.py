@@ -1,6 +1,7 @@
 # provided with a list provide the largest/smallest number.
 
 my_list = [1, 2, 3, 4, 5, 6, 99, 245, 0]
+y = []
 
 # my_list.sort()
 # print(my_list)
@@ -24,3 +25,14 @@ biggest_number()
 
 
 # guess_big_number()
+
+
+def last_num():
+    print(x[-1])
+    if y == []:
+        print("There is nothing here.")
+    else:
+        print(y)
+
+
+last_num()

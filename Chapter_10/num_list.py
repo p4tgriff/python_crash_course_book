@@ -36,3 +36,11 @@ def last_num():
 
 
 last_num()
+
+
+def lastNumberInList():
+    x = [0, 1, 4, 2]
+    print(x[-1])
+
+
+lastNumberInList()

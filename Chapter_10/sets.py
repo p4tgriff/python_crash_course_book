@@ -1,2 +1,2 @@
-mylist = {"apple", "cherry", "banana", "grape"}
-print(type(mylist))
+myset = {"apple", "cherry", "banana", "grape"}
+print(type(myset))
